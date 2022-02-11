@@ -350,7 +350,7 @@ class CheckpointConnector:
         model = self.trainer.lightning_module
 
         checkpoint = {
-            # the epoch and global step are saved for compatibility but it's not relevant for restoration
+            # the epoch and global step are saved for compatibility but they are not relevant for restoration
             "epoch": self.trainer.current_epoch,
             "global_step": self.trainer.global_step,
             "pytorch-lightning_version": pl.__version__,

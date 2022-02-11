@@ -339,6 +339,7 @@ def test_model_checkpoint_options(tmpdir, save_top_k, save_last, expected_files)
 
     file_lists = set(os.listdir(tmpdir))
 
+    # FIXME
     assert len(file_lists) == len(
         expected_files
     ), f"Should save {len(expected_files)} models when save_top_k={save_top_k} but found={file_lists}"

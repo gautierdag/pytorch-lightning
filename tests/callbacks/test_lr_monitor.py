@@ -403,6 +403,7 @@ def test_lr_monitor_duplicate_custom_pg_names(tmpdir):
 
 
 def test_multiple_optimizers_basefinetuning(tmpdir):
+    # FIXME
     class TestModel(BoringModel):
         def __init__(self):
             super().__init__()
