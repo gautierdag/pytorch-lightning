@@ -1119,6 +1119,10 @@ model_size
 
 Get the model file size (in megabytes) using ``self.model_size`` inside LightningModule.
 
+Warning
+
+The `model_size` property was deprecated in v1.5.0 and will be removed in v1.7.0 Please use the `pytorch_lightning.utilities.memory.get_model_size_mb` instead.
+
 truncated_bptt_steps
 ~~~~~~~~~~~~~~~~~~~~
 
